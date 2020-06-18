@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal, Header, Form, Icon } from 'semantic-ui-react'
+import { Button, Modal, Header, Form } from 'semantic-ui-react'
 import FormInput from '../common/FormInput'
 
 function ResourceNewModal({

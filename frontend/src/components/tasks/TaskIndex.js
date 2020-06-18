@@ -42,11 +42,10 @@ function TaskIndex() {
 
   const filterTasks = (tasks, taskId) => {
     return tasks.filter(item => {
-      if (item.id === parseInt(taskId)) {
-        return item
-      }
+      return item.id === parseInt(taskId)
     })
   }
+
 
   //* Functions to allow the user to tick the task off as completed 
   const toggleCheckbox = async ({ target: { id } }) => {
@@ -85,8 +84,8 @@ function TaskIndex() {
   //* Function to toggle the edit form & set the task to state
   const toggleForm = (event) => {
     event.preventDefault()
-    const id = event.currentTarget.value 
-    if (width < 768){
+    const id = event.currentTarget.value
+    if (width < 768) {
       history.push(`/tasks/${id}`)
     } else {
       window.scrollTo(0, 0)
@@ -124,7 +123,7 @@ function TaskIndex() {
   const handleCloseDeleteConfirm = () => {
     setDeleteModalOpen(false)
   }
-  
+
   const deleteItem = async () => {
     try {
       await deleteTask(taskToDelete)
@@ -137,7 +136,7 @@ function TaskIndex() {
     }
   }
 
-  
+
   const handleSearch = e => {
     setSearch(e.target.value)
   }

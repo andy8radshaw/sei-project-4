@@ -8,17 +8,15 @@ function TaskLabel(category) {
 
   const filterCategories = (array, string) => {
     return array.filter(item => {
-      if (item.value === string) {
-        return item
-      } else {
-        return null
-      }
+      return item.value === string
     })
   }
   const filteredCategory = filterCategories(taskCategories, string)
+  if (filterCategories.length === 0) return null
   
   const text = filteredCategory[0].text
   const color = filteredCategory[0].label.color
+
 
   return (
     <Label color={color}>{text}</Label>

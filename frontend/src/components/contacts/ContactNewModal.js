@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal, Header, Form, Icon, Dropdown } from 'semantic-ui-react'
+import { Button, Modal, Header, Form, Dropdown } from 'semantic-ui-react'
 import FormInput from '../common/FormInput'
 
 function ContactNewModal({
@@ -18,7 +18,7 @@ function ContactNewModal({
   const jobOptions = jobs.map((job => {
     return (
       {
-        key: `${job.job_title} - ${job.company}`,
+        key: `${job.job_title} - ${job.company} - ${job.id}`,
         text: `${job.job_title} - ${job.company}`,
         value: job.id
       }

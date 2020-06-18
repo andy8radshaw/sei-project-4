@@ -36,7 +36,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='Job title'
                     name='job_title'
-                    value={data.job_title}
+                    value={data.job_title || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -49,7 +49,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     clearable
                     format='DD MMMM YYYY'
                     name='application_deadline'
-                    value={data.application_deadline ? new Date(data.application_deadline) : null}
+                    value={data.application_deadline ? new Date(data.application_deadline) : ''}
                     onChange={handleDateChange}
                   />
                 </Form.Field>
@@ -66,7 +66,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='Company'
                     name='company'
-                    value={data.company}
+                    value={data.company || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -79,7 +79,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     clearable
                     format='DD MMMM YYYY'
                     name='application_submitted'
-                    value={data.application_submitted !== null ? new Date(data.application_submitted) : null}
+                    value={data.application_submitted !== null ? new Date(data.application_submitted) : ''}
                     onChange={handleDateChange}
                   />
                 </Form.Field>
@@ -94,7 +94,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='City'
                     name='city'
-                    value={data.city}
+                    value={data.city || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -107,7 +107,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='Country'
                     name='country'
-                    value={data.country}
+                    value={data.country || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -120,7 +120,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     clearable
                     format='DD MMMM YYYY'
                     name='interview_date'
-                    value={data.interview_date ? new Date(data.interview_date) : null}
+                    value={data.interview_date ? new Date(data.interview_date) : ''}
                     onChange={handleDateChange}
                   />
                 </Form.Field>
@@ -135,7 +135,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='Job URL'
                     name='job_url'
-                    value={data.job_url}
+                    value={data.job_url || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -148,7 +148,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     clearable
                     format='DD MMMM YYYY'
                     name='job_offer_date'
-                    value={data.job_offer_date ? new Date(data.job_offer_date) : null}
+                    value={data.job_offer_date ? new Date(data.job_offer_date) : ''}
                     onChange={handleDateChange}
                   />
                 </Form.Field>
@@ -163,7 +163,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='Salary'
                     name='salary'
-                    value={data.salary}
+                    value={data.salary || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
@@ -174,10 +174,8 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                   <Dropdown
                     fluid
                     selection
-                    // error={errors.status}
                     name='status'
-                    value={data.status}
-                    // placeholder={newJobStatus}
+                    value={data.status || ''}
                     options={options}
                     onChange={selectDropdown}
                   />
@@ -191,7 +189,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     clearable
                     format='DD MMMM YYYY'
                     name='offer_acceptance_date'
-                    value={data.offer_acceptance_date ? new Date(data.offer_acceptance_date) : null}
+                    value={data.offer_acceptance_date ? new Date(data.offer_acceptance_date) : ''}
                     onChange={handleDateChange}
                   />
                 </Form.Field>
@@ -206,13 +204,13 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                     type='text'
                     placeholder='No description'
                     name='description'
-                    value={data.description}
+                    value={data.description || ''}
                     onChange={handleChange}
                   />
                 </Form.Field>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Column width={16} only=' tablet mobile'>
+            <Grid.Column width={16} only='tablet mobile'>
               <Form.Field>
                 <Header size='small'>Application deadline</Header>
                 <SemanticDatepicker
@@ -220,7 +218,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                   clearable
                   format='DD MMMM YYYY'
                   name='application_deadline'
-                  value={data.application_deadline ? new Date(data.application_deadline) : null}
+                  value={data.application_deadline ? new Date(data.application_deadline) : ''}
                   onChange={handleDateChange}
                 />
               </Form.Field>
@@ -234,7 +232,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                   clearable
                   format='DD MMMM YYYY'
                   name='application_submitted'
-                  value={data.application_submitted !== null ? new Date(data.application_submitted) : null}
+                  value={data.application_submitted !== null ? new Date(data.application_submitted) : ''}
                   onChange={handleDateChange}
                 />
               </Form.Field>
@@ -247,7 +245,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                   clearable
                   format='DD MMMM YYYY'
                   name='interview_date'
-                  value={data.interview_date ? new Date(data.interview_date) : null}
+                  value={data.interview_date ? new Date(data.interview_date) : ''}
                   onChange={handleDateChange}
                 />
               </Form.Field>
@@ -273,7 +271,7 @@ function JobForm({ data, errors, handleChange, handleDateChange, selectDropdown,
                   clearable
                   format='DD MMMM YYYY'
                   name='offer_accepted'
-                  value={data.offer_accepted ? new Date(data.offer_accepted) : null}
+                  value={data.offer_accepted ? new Date(data.offer_accepted) : ''}
                   onChange={handleDateChange}
                 />
               </Form.Field>

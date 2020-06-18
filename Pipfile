@@ -14,6 +14,7 @@ pylint = "*"
 pyjwt = "*"
 djangorestframework = "*"
 djangorestframework-camel-case = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.7"
