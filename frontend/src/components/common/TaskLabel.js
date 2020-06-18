@@ -10,6 +10,8 @@ function TaskLabel(category) {
     return array.filter(item => {
       if (item.value === string) {
         return item
+      } else {
+        return null
       }
     })
   }

@@ -5,7 +5,7 @@ import JobNew from './JobNew'
 
 function JobNewModal({ addNewModalOpen, handleNewJobModalClose, newJobStatus }) {
 
-  console.log(newJobStatus, typeof(newJobStatus))
+  // console.log(newJobStatus, typeof(newJobStatus))
   return (
     <Modal open={addNewModalOpen}>
       <Modal.Content>

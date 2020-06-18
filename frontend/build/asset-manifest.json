@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f686b460.chunk.css",
+    "main.js": "/static/js/main.21f3ad12.chunk.js",
+    "main.js.map": "/static/js/main.21f3ad12.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1f1f19a3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1f1f19a3.js.map",
+    "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
+    "static/js/2.57f131ab.chunk.js": "/static/js/2.57f131ab.chunk.js",
+    "static/js/2.57f131ab.chunk.js.map": "/static/js/2.57f131ab.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.452fc23ac95bfafa638c53eefd8096b6.js": "/precache-manifest.452fc23ac95bfafa638c53eefd8096b6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
+    "static/css/main.f686b460.chunk.css.map": "/static/css/main.f686b460.chunk.css.map",
+    "static/js/2.57f131ab.chunk.js.LICENSE.txt": "/static/js/2.57f131ab.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/jobr-example-mobile.png": "/static/media/jobr-example-mobile.2a5e5cdd.png",
+    "static/media/jobr-example.png": "/static/media/jobr-example.e458a60a.png",
+    "static/media/jobr-logo.png": "/static/media/jobr-logo.69ae7699.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f1f19a3.js",
+    "static/css/2.7df41cd5.chunk.css",
+    "static/js/2.57f131ab.chunk.js",
+    "static/css/main.f686b460.chunk.css",
+    "static/js/main.21f3ad12.chunk.js"
+  ]
+}

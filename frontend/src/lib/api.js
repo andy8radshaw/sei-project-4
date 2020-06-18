@@ -49,7 +49,7 @@ export const getAllTasks = () => {
 }
 
 export const getSingleTask = id => {
-  return axios.get(`${baseUrl}/tasks/${id}`, withHeaders())
+  return axios.get(`${baseUrl}/tasks/${id}/`, withHeaders())
 }
 
 export const addNewTask = data => {
