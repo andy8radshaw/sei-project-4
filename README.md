@@ -9,6 +9,7 @@
 - Wins & Blockers
 - Bugs
 - Future Content and Improvements
+- Key Learnings
 
 ---
 
@@ -23,9 +24,18 @@ email: jobseeker@email.com\
 password: pass
 
 ## Code Installation:
-- Clone or download the repo
-- Install Yarn in terminal with command:  `yarn`
-- Start server with terminal command: `yarn start`
+Clone or download the repo then do the following in Terminal:
+
+- Install back-end dependencies:  `pipenv`
+- Enter Shell for project: `pipenv shell`
+- Make Migrations: `python manage.py makemigrations`
+- Migrate: `python manage.py migrate`
+- Load Seed data for Job Statuses: `python manage.py loaddata job_status/seeds.json`
+- Load Seed data for Task Categories: `python manage.py loaddata task_categories/seeds.json`
+- Start back-end server: `python manage.py runserver`
+- Change into front-end directory: `cd frontend`
+- Install front-end dependencies: `yarn`
+- Start front-end server: `yarn start`
 
 ---
 
@@ -70,17 +80,25 @@ password: pass
 - Trello Board (planning and timeline)
 - Miro Board (wireframing)
 - Coolers (colour theme)
+- Zoom
+- Slack
 
 # Approach Taken 
 
 ## Planning (day 1):
 As a group we decided very quickly on the idea of JOBR for this project and that we all wanted to be involved in the full-stack development of the app. We also decided early on that we should develop it to be fully responsive initially built mobile first. With that in mind we used MIRO to create a storyboard/wireframe as well as plan for the models we required and the relationships between them. 
 
+
 **Storyboard:**
 ![](frontend/src/assets/jobr-storyboard.png)
 
 **Relationships:**
 ![](frontend/src/assets/jobr-relationships.png)
+
+We decided early on to keep a high level of communication throughout the project. We started each day with a 30-minute stand up discussion where we would talk about our current tasks and if we had any blockers. We were then on a Zoom meeting and Slack throughout the day so we could keep in contact should we need any quick bug fixing etc. We used Git and GitHub for version control and decided for the first few days to do our pushes and pulls together to aviod any potential Git issues or merge conflicts that may arise. We delegated the work evenly between us and used Trello to create a to-do list that we would all keep on top of throughout the project.
+
+**Trello Board:**
+![](frontend/src/assets/jobr-trello.png)
 
 ---
 ## Back-end (day 2 & 3): 
@@ -154,3 +172,5 @@ As I mentioned, we used Semantic UI for the styling however, many of the compone
 - Progressive Web App functionality
 - Swipeable views on Mobile/Tablet view
 
+# Key Learnings
+This project has really helped me gain a much stronger understanding of relational databases. 
