@@ -173,4 +173,4 @@ As I mentioned, we used Semantic UI for the styling however, many of the compone
 - Swipeable views on Mobile/Tablet view
 
 # Key Learnings
-This project has really helped me gain a much stronger understanding of relational databases. 
+This project has really helped me gain a much stronger understanding of relational databases and has lead me down the path of learning more Python. Initially while learning it, I didn't like using Django to create the back-end as it felt a little too controlled however, after using it in this project I can see how quick and effective it has been so will definitely use it again on a future project.
