@@ -164,13 +164,16 @@ As I mentioned, we used Semantic UI for the styling however, many of the compone
 - Initially I took quite a while to work out how I was going to get the jobs index and job boards switching nicely on Mobile and Tablet views. Ideally I would have liked to have added in swipeable views, however, due to time constraints I decided it was best to get it working on button presses and not dwell too much and move onto the next feature. Swipeable was added to the Nice To Haves list and unfortunately not implemented
 
 # Bugs
-- When you have added a new task, the form is not automatically cleared and you have to reload the page to clear it to add a new task. 
-- Job indec
+- When you have added a new task, the form is not automatically cleared and you have to reload the page to clear it to add a new task. (fixed)
+- Mobile landscape view is not working at all so some media queries and additional styling is needed here
+- Currently not able to update Resources or Contacts, only Create and Delete
+
 
 # Future Content & Improvements
 - The ability to share your job search board with career coach
 - Progressive Web App functionality
 - Swipeable views on Mobile/Tablet view
+- Drag n Drop to work on mobile/tablet views
 
 # Key Learnings
 This project has really helped me gain a much stronger understanding of relational databases and has lead me down the path of learning more Python. Initially while learning it, I didn't like using Django to create the back-end as it felt a little too controlled however, after using it in this project I can see how quick and effective it has been so will definitely use it again on a future project.
