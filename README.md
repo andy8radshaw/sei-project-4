@@ -110,10 +110,10 @@ This was my first experience of creating a back-end using Python. We used Django
 ---
 
 ## Front-end (days 3, 4, 5, 6, 7 & 8)
-For the front-end we used React Hooks throughout. I took charge of creating the Jobs, Navbar, Contacts and Resources pages. We used Axios for the data requests from the back-end, creating an API request library that was imported in to each relevent page. React-router-dom was used for page navigation in React. We decided to use Semantic UI styling framework as it appeared to be a slightly lighter weight than Bulma which we had all previously used. and our plan was to build with this in mind so in the final two days we would be able to 
+For the front-end we used React Hooks throughout. I took charge of creating the Jobs, Navbar, Contacts and Resources pages. We used Axios for the data requests from the back-end, creating an API request library that was imported in to each relevent page. React-router-dom was used for page navigation in React. We decided to use Semantic UI styling framework as it appeared to be a slightly lighter weight than Bulma which we had all previously used. and our plan was to build with this in mind so in the final two days we would be able to.
 
 **JobIndex page:**\
-For the Jobs Index page there were multiple views that needed to be created based on which ever device the user was using. For example, on desktop all 5 job category columns were visible, on tablet only 2/3 are visable and on mobile only one column could be viewed at a time. Because of these multiple views and needing to be able to switch between columns, I found a public React Hook that would take into account the viewport width and render the page based on this. I then created the mulitple views and the functions to switch between each view - again dependant on the current screen width. This ended up working very well however, I would like to add swipeable functionality to the mobile and tablet views for a nicer user experience
+For the Jobs Index page there were multiple views that needed to be created based on which ever device the user was using. For example, on desktop all 5 job category columns were visible, on tablet only 2/3 are visable and on mobile only one column could be viewed at a time. Because of these multiple views and needing to be able to switch between columns, I found a public React Hook that would take into account the viewport width and render the page based on this. I then created the mulitple views and the functions to switch between each view - again dependant on the current screen width. This ended up working very well however, I would like to add swipeable functionality to the mobile and tablet views for a nicer user experience.
 
 For the desktop view I also created a drag and drop feature, which would enable a user to drag a job from one category to another. This ended up working very well and is a feature I am proud of. However, again through some better styling I think I could make the process a little slicker looking. Below is a code snippet of the function that occurs upon drop of the selected job:
 
@@ -132,7 +132,7 @@ Using Semantic UI's Modal - I created a re-usable Hook component - This was used
 ![](frontend/src/assets/jobr-delete-confirm.png)
 
 **Navbar:**
-This was created very simply by using Semantic UI's Menu feature. We wanted a simple menu that would be the same on mobile as it is on desktop/tablet
+This was created very simply by using Semantic UI's Menu feature. We wanted a simple menu that would be the same on mobile as it is on desktop/tablet.
 
 ---
 
@@ -159,14 +159,14 @@ As I mentioned, we used Semantic UI for the styling however, many of the compone
 # Wins & Blockers
 ### **Wins:**
 - Simple and functional working responsive design across multiple platforms - Very happy with this as I feel most users would end up using this on their Mobile device just as much if not more than on a desktop. 
-- using Hooks throughout was a challenge, however, I found it a rather easy switch to this more modern syntax
+- Using Hooks throughout was a challenge, however, I found it a rather easy switch to this more modern syntax.
 ### **Blockers:**
-- Initially I took quite a while to work out how I was going to get the jobs index and job boards switching nicely on Mobile and Tablet views. Ideally I would have liked to have added in swipeable views, however, due to time constraints I decided it was best to get it working on button presses and not dwell too much and move onto the next feature. Swipeable was added to the Nice To Haves list and unfortunately not implemented
+- Initially I took quite a while to work out how I was going to get the jobs index and job boards switching nicely on Mobile and Tablet views. Ideally I would have liked to have added in swipeable views, however, due to time constraints I decided it was best to get it working on button presses and not dwell too much and move onto the next feature. Swipeable was added to the Nice To Haves list and unfortunately not implemented.
 
 # Bugs
 - When you have added a new task, the form is not automatically cleared and you have to reload the page to clear it to add a new task. (fixed)
-- Mobile landscape view is not working at all so some media queries and additional styling is needed here
-- Currently not able to update Resources or Contacts, only Create and Delete
+- Mobile landscape view is not working at all so some media queries and additional styling is needed here.
+- Currently not able to update Resources or Contacts, only Create and Delete.
 
 
 # Future Content & Improvements
@@ -176,4 +176,4 @@ As I mentioned, we used Semantic UI for the styling however, many of the compone
 - Drag n Drop to work on mobile/tablet views
 
 # Key Learnings
-This project has really helped me gain a much stronger understanding of relational databases and has lead me down the path of learning more Python. Initially while learning it, I didn't like using Django to create the back-end as it felt a little too controlled however, after using it in this project I can see how quick and effective it has been so will definitely use it again on a future project.
+This project has really helped me gain a much stronger understanding of relational databases and has lead me down the path of learning more Python. Initially while learning it, I didn't like using Django to create the back-end as it felt a little too controlled however, after using it in this project I can see how quick and effective it has been so will definitely use it again on a future project. 
