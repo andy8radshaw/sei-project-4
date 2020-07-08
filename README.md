@@ -16,7 +16,7 @@
 # Overview
 JOBR is a Job search toolkit helping job seekers keep organised throughout their search for a new role. This is a full stack project and my first experience using Python and Django as the back-end. The whole application was built and delivered over 8 days in a group of three devs.
 
-## You will find the deployed app here: https://jobrrr.herokuapp.com/
+## You will find the deployed app here: **[JOBR](https://jobrrr.herokuapp.com/)**
 
 To see the full features for JOBR, please feel free to login using the following credentials:
 
